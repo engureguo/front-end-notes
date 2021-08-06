@@ -1,0 +1,40 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<form id="form11">
+			username:<input type="text" name="username"/>
+			<br/>
+			<input type="button" value="submit" onclick="formSubmit();"/>
+			<hr/>
+			<a href="hello.html?username=123456">使用超链接提交</a>
+			<hr/>
+			<input type="text" id="id1" value="请输入"/ onfocus="focus1();" onblur="blur1();"/>
+		</form>
+	</body>
+	<script type="text/javascript">
+		function formSubmit()
+		{
+			var form11 = document.getElementById("form11");
+			//设置 action
+			form11.action = "hello.html";
+			//提交 form
+			form11.submit();
+		}
+		function focus1()
+		{
+			var input1 = document.getElementById("id1");
+			if(input1.value == "请输入")
+				input1.value = '';
+		}
+		function blur1()
+		{
+			var input1 = document.getElementById("id1");
+			if(input1.value == '')
+				input1.value = '请输入';
+		}
+	</script>
+</html>

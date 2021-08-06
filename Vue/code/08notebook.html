@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<div id="app">
+    <input v-model="newtask" @keyup.enter="keep" />
+    <ul>
+        <li v-for="(item,index) in tasks">
+            <label> {{ index+1 }}.</label> {{ item }}
+            <button @click="del(index)">x</button>
+        </li>
+    </ul>
+    <div v-show="tasks.length != 0">
+        <label>all {{tasks.length}} tasks</label>
+        <button @click="clear">clear</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            newtask: "",
+            tasks: ['study chapter 3', 'go cycling for 1h', 'laundry for 30min']
+        },
+        methods: {
+            keep: function() { // add new task
+                if (this.newtask.length != 0) {
+                    this.tasks.push(this.newtask);
+                    this.newtask = "";
+                }
+            },
+            del: function(index) { // remove tasks[index]
+                this.tasks.splice(index, 1) // (start, deleteCount, ..)
+            },
+            clear: function() { // remove all
+                if (this.tasks.length != 0) this.tasks.splice(0)
+            }
+        },
+    })
+</script>

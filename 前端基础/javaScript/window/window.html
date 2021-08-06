@@ -1,0 +1,22 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		编号：<input type="text" id="numid" value=''/><br/>
+		姓名：<input type="text" id="nameid" value=''/><br/>
+		<input type="button" value="选择" onclick="open1();"/>
+		<script type="text/javascript">
+			function open1(){
+				window.open('user.html','','width=400,height=300');
+			}
+		</script>
+	</body>
+</html>
+<!--静态网页，跨页面赋值，
+报错：DOMException：Blocked a frame with origin "null" from accessing a cross-origin frame.
+
+vscode中，实现动态显示，遇到的问题：td标签中内容的更改问题，不得不用input text解决问题
+-->

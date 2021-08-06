@@ -1,0 +1,83 @@
+﻿<!--传智播客注册-->
+<html>
+	<head>
+		<title>传智播客注册</title>
+	</head>
+	<body>
+		<h2>传智播客注册</h2>
+		<form action="learn01.html">
+			<table width="100%">
+				<tr>
+					<td align="right">注册邮箱：</td>
+					<td><input type="text" name="mail"/></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>你可以使用<a href="#">账号</a>注册或使用<a href="#">手机号</a>注册</td>
+				</tr>
+				<tr>
+					<td align="right">创建密码：</td>
+					<td><input type="password" name="pwd"/></td>
+				</tr>
+				<tr>
+					<td align="right">真实姓名：</td>
+					<td><input type="text" name="realname"/></td>
+				</tr>
+				<tr>
+					<td align="right">性别：</td>
+					<td><input type="radio" name="sex" value="woman"/>女<input type="radio" name="sex" value="man"/>男</td>
+				</tr>
+				<tr>
+					<td align="right">生日：</td>
+					<td>
+						<select name="year">
+							<option value="1999">1999</option>
+							<option value="2000">2000</option>
+							<option value="2001">2001</option>
+						</select>年
+						<select name="month">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="5">5</option>
+						</select>月
+						<select name="day">
+							<option value="1">1</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+						</select>日
+					</td>
+				</tr>
+				<tr>
+					<td align="right">我现在：</td>
+					<td>
+						<select name="myjob">
+							<option value="school">我在上学</option>
+							<option value="job">我在工作</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<img src="../res/verycode.png"/> <a href="#">看不清换一张?</a>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">验证码：</td>
+					<td><input type="text" name="verycode"/></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<input type="image" src="../res/btn_reg.png"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
+<!--
+file:///D:/editplus/learn01.html
+?mail=123%40qq.com&pwd=123&realname=ggg&sex=man&year=2000&month=2&day=20&myjob=school&verycode=wmhatp  &x=75&y=26
+-->

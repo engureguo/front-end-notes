@@ -1,0 +1,37 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+			div {
+				border: 1px solid orange;
+				width: 500;
+				height: 100;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<br/>
+			<input id="box1" name="box" value="aaa"/>
+			<input id="box2" name="box" value="bbb"/>
+			<input id="box3" name="box" value="ccc"/>
+		</div>
+		<script type="text/javascript">
+			var input1 = document.getElementById("box1");
+			input1.id = "box4";
+			//getElementsByName()
+			var inputs1 = document.getElementsByName("box");
+			for(var i=0; i<inputs1.length; i++){
+				var input2 = inputs1[i];
+				input2.value = i;//修改得到标签的value值
+			}
+			//getElementsByTagName
+			var inputs2 = document.getElementsByTagName("input");
+			for(var i=0; i<inputs2.length; i++)
+			{
+				var input3 = inputs2[i];
+				input3.name=i+'abc';//修改得到标签的name值
+			}
+		</script>
+	</body>
+</html>

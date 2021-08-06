@@ -1,0 +1,38 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var dt = new Date();
+			document.write(dt);
+			document.write("<hr/>");
+			//local time pattern
+			document.write("习惯时间样式: "+dt.toLocaleString());
+			document.write("<hr/>");
+			//year
+			document.write("year: "+dt.getFullYear());
+			document.write("<hr/>");
+			//month 0-11
+			document.write("month: "+(dt.getMonth()+1));
+			document.write("<hr/>");
+			//date
+			document.write("day: "+dt.getDate());
+			document.write("<hr/>");
+			//day
+			document.write("week: "+dt.getDay());
+			document.write("<hr/>");
+			//minute
+			document.write("minute: "+dt.getMinutes());
+			document.write("<hr/>");
+			//second
+			document.write("second: "+dt.getSeconds());
+			document.write("<hr/>");
+			//time
+			document.write(dt.getTime());
+			document.write("<hr/>");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<table border='1' bordercolor='blue'>"); //属性值用单引号括住
+			for(var i=1; i<=9; i++)
+			{
+				document.write("<tr>");
+				for(var j=1; j<=i; j++)
+				{
+					document.write("<td>");
+					document.write(j+"*"+i+"="+i*j+"&nbsp;");//当作html代码,需要转义！
+					document.write("</td>");
+				}
+				document.write("</tr>");
+				//document.write("<br/>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<div id="app">
+    {{ msg }}
+    <p v-text="msg+true"></p>
+    <h2> {{ person.name }} {{ person.age }} </h2>
+    <ul>
+        <li>{{ tasks[0] }}</li>
+        <li>{{ tasks[1] }}</li>
+    </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            msg: "你好 小黑！",
+            person: {
+                name: 'engure',
+                age: 22
+            },
+            tasks: ['算法', 'vue', '八股文']
+        }
+    })
+</script>
