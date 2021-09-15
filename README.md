@@ -2,5 +2,7 @@
 前端学习
 
 # directory
-- `Vue/` vue学习的一些代码
-- `前端基础/` 学习 html, js, css 时的一些代码
+- `Vue/` vue
+- `NodeJS/` node.js
+- `Bases`  html、js、css
+

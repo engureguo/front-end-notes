@@ -1,0 +1,60 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="boxid" onclick="selAllNot();"/>全选/全不选
+		<br/>
+		<input type='checkbox' name="love"/>篮球
+		<br/>
+		<input type='checkbox' name="love"/>足球
+		<br/>
+		<input type='checkbox' name="love"/>排球
+		<br/>
+		<input type='checkbox' name="love"/>乒乓球
+		<br/>
+		<input type="button" value="全选" onclick="selAll();"/>
+		<input type="button" value="全不选" onclick="selNot();"/>
+		<input type="button" value="反选" onclick="selOther();"/>
+		<script type="text/javascript">
+			function selAllNot(){
+				var box1 = document.getElementById("boxid");
+				if(box1.checked == true){
+					var inputs1 = document.getElementsByName("love");
+					for(var i=0; i<inputs1.length; i++){
+						inputs1[i].checked = true;
+					}
+					return;
+				}
+				var inputs1 = document.getElementsByName("love");
+				for(var i=0; i<inputs1.length; i++){
+					inputs1[i].checked = false;
+				}
+			}
+			function selAll(){
+				var box1 = document.getElementById("boxid");
+				box1.checked = true;
+				var inputs1 = document.getElementsByName("love");
+				for(var i=0; i<inputs1.length; i++){
+					inputs1[i].checked = true;
+				}
+			}
+			function selNot(){
+				var box1 = document.getElementById("boxid");
+				box1.checked = false;
+				var inputs1 = document.getElementsByName("love");
+				for(var i=0; i<inputs1.length; i++){
+					inputs1[i].checked = false;
+				}
+			}
+			function selOther(){
+				var inputs1 = document.getElementsByName("love");
+				for(var i=0; i<inputs1.length; i++){
+					inputs1[i].checked = true - inputs1[i].checked;
+				}
+			}
+		</script>
+	</body>
+</html>

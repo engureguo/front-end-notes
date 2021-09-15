@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<button id="get">get</button>
+<button id="post">post</button>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+<script>
+    $('#get').on('click', function() {
+        axios.get("https://autumnfish.cn/api/joke/list?num=3").then(
+            function(resp) {
+                console.log(resp)
+            },
+            function(err) {
+                console.log(err)
+            },
+        )
+    })
+    $('#post').on('click', function() {
+        axios.post("https://autumnfish.cn/api/user/reg", {
+            username: "engure"
+        }).then(
+            function(resp) {
+                console.log(resp)
+            },
+            function(err) {
+                console.log(err)
+            }
+        )
+    })
+</script>

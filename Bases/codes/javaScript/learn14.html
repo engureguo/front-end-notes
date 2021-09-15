@@ -1,0 +1,46 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<input type="button" value="open a new wnd" onclick="open1();"/>
+		<hr/>
+		<input type="button" value="open a 2s interval" onclick="setinterval1();"/>
+		<input type="button" value="open a 2s timeout" onclick="settimeout1();"/>
+		<hr/>
+		<input type="button" value="cancel interval" onclick="clearinterval1();"/>
+		<input type="button" value="cancel timeout" onclick="cleartimeout1();"/>
+		<script type="text/javascript">
+			//var num = prompt("输入个数: ","0");
+			//var isOk = confirm("个数 = "+num);
+			//window.alert(isOk);
+
+			//open
+			function open1(){
+				window.open("b.html","","width:500;height:300;");
+			}
+			
+			var id1='';//
+			var id2='';
+
+			//setInterval
+			function setinterval1(){
+				id1 = window.setInterval('alert("this is from window.setInterval()");',2000);
+			}
+			//setTimeout
+			function settimeout1(){
+				id2 = window.setTimeout('alert("this is from window.setTimeout()");',2000);
+			}
+
+			//clear
+			function clearinterval1(){
+				window.clearInterval(id1);
+			}
+			function cleartimeout1(){
+				window.clearTimeout(id2);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function add(){return 0;}
+			function add(a){return a;}
+			function add(a,b){return a+b;}
+			function add(a,b,c){return a+b+c;}
+			function add(a,b,c,d){return a+b+c+d;}
+			/*
+			alert(add());
+			alert(add(1));
+			alert(add(1,1));
+			alert(add(1,1,1));
+			alert(add(1,1,1,1));
+			*/
+			function add1(){
+				var tp = 0;
+				for(var i=0; i<arguments.length; i++){
+					tp += arguments[i];
+				}
+				return tp;
+			}
+			alert(add1());
+			alert(add1(1));
+			alert(add1(1,1));
+			alert(add1(1,1,1));
+			alert(add1(1,1,1,1));
+		</script>
+	</body>
+</html>

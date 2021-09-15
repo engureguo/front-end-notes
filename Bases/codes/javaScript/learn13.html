@@ -1,0 +1,31 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<input type="button" value="click me" onclick="href1();" /> <!--不能写在script中-->
+		<hr/>
+		<script type="text/javascript">
+			function href1(){
+				//页面跳转
+				location.href = "learn01.html";
+			}
+			document.write(navigator.appName+"  "+navigator.appCodeName+"  "+navigator.platform);
+			document.write("<hr/>");
+			document.write("client bowser width: "+screen.width+", height: "+screen.height);
+			document.write("<hr/>");
+			document.write("current url: "+location.href+"<br/>");
+			document.write("<hr/>");
+			//history方法
+			function back1(){
+				history.back();
+			}
+			function next1(){
+				history.forword();
+			}
+		</script>
+		<a href="a.html">a.html</a>
+	</body>
+</html>

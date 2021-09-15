@@ -1,0 +1,20 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+		<body>
+			<ul id="ulid">
+				<li>Tom</li>
+				<li>Jack</li>
+				<li>Meury</li>
+			</ul>
+			<script type="text/javascript">
+				var ul1 = document.getElementById("ulid");
+				//var lis1 = ul1.childNodes; 采用标签属性childNodes通过父标签获取子标签集合不准确
+				var lis2 = ul1.getElementsByTagName("li");
+				alert(lis2.length);
+			</script>
+		</body>
+</html>

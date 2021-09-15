@@ -1,0 +1,33 @@
+﻿<!--用浏览器打开-->
+<html>
+	<head>
+		<title>表单标签</title>
+	</head>
+	<body>
+		<form action="learn01.html">
+			手机号码: <input type="text" name="phone"/><br/>
+
+			密码设置: <input type="password" name="pwd"/><br/>
+
+			性别: 男<input type="radio" name="sex" value="man"/>女<input type="radio" name="sex" value="woman"/><br/>
+
+			爱好: 篮球<input type="checkbox" name="hobby" value="basketball"/>乒乓球<input type="checkbox" name="hobby" value="ping pong"/>足球<input type="checkbox" name="hobby" value="football"/><br/>
+			文件: <input type="file"/><br>
+
+			生日: 年<select name="year">
+				<option value="0">请选择</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select><br/>
+
+			自我描述: <textarea rows="4" cols="20" name="tex"></textarea><br/>
+
+			隐藏项: <input type="hidden" name="hid"/><br/>
+
+			<input type="submit" value="注册"/>
+			<input type="button" value="btn"/>
+			<input type="reset" value="re set"/>
+		</form>
+	</body>
+</html>

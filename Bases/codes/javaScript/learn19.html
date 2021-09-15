@@ -1,0 +1,26 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div id="divId">this is the content part</div>
+		<script type="text/javascript">
+			var div1 = document.getElementById("divId");
+			//alert(div1.nodeName); DIV
+			//alert(div1.nodeType); 1
+			//alert(div1.nodeValue); null
+			//属性
+			var divAttr = div1.getAttributeNode("id"); //属性id的节点
+			//alert(divAttr.nodeName); id
+			//alert(divAttr.nodeType); 2
+			//alert(divAttr.nodeValue); divId
+			//文本
+			var divTex = div1.firstChild;//childNodes 中第一个结点
+			//alert(divTex.nodeName); #text
+			//alert(divTex.nodeType); 3
+			//alert(divTex.nodeValue); this is the...
+		</script>
+	</body>
+</html>

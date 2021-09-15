@@ -1,0 +1,44 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//concat 返回数组
+			var arr1 = [1,2,3];
+			var arr2 = [4,5,6];
+			var arrtemp1 = arr1.concat(arr2);//连接数组并返回数组
+			document.write(arrtemp1);
+			document.write("<hr/>");
+			//join
+			var arr3 = ["Kobe Byrant",41,"man","Hero"];
+			var strtemp = arr3.join(" - ");//连接元素
+			document.write(strtemp);
+			document.write("<hr/>");
+			//push
+			var arr4 = [true,"Leborn","Visual Srudio Code",32];
+			var rt1 = arr4.push("the add one");//数组末端添加元素并返回元素个数
+			document.write(arr4+"<br/>");
+			document.write(rt1);
+			document.write("<hr/>");
+			//pop
+			var arr5 = ["apple",1.5,3.33333,"editplus"];
+			document.write(arr5+"<br/>");
+			var rt2 = arr5.pop();//删除并返回
+			document.write(rt2+"<br/>");
+			document.write(arr5);
+			document.write("<hr/>");
+			//reverse
+			var arr6 = [1,2,3,4,"sort"];
+			document.write(arr6+"<br/>");
+			var rt3 = arr6.reverse();
+			document.write(rt3+"<hr/>");
+			//demo
+			var dm = [["hanhan","j"],true,"is",'red',88];
+			document.write(dm.join(" - "));
+			//
+		</script>
+	</body>
+</html>

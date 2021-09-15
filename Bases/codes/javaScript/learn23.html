@@ -1,0 +1,29 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+			#div1 {
+				border: 1px dashed orange;
+				width: 300;
+				height: 200;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li id="li1">紫衫龙王</li>
+			<li id="li2">白眉鹰王</li>
+			<li id="li3">金毛狮王</li>
+			<li id="li4">青冀蝠王</li>
+		</ul>
+		<div id="div1"></div>
+		<input type="button" value="clone" onclick="clone1();"/>
+		<script type="text/javascript">
+			function clone1(){
+				var copyNode = document.getElementById("ul1").cloneNode(true);
+				var oldNode = document.getElementById("div1");
+				oldNode.appendChild(copyNode);
+			}
+		</script>
+	</body>
+</html>

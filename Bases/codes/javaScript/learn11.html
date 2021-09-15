@@ -1,0 +1,35 @@
+﻿<html>
+	<head>
+		<title>test html</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//全局函数
+
+			//eval
+			var s1 = "document.write('this is called by eval');";
+			eval(s1);
+			document.write("<hr/>");
+			//encodeURI/decodeURI
+			var ed1 = encodeURI("哈哈哈123abc");
+			document.write(ed1+"<br/>");
+			var dd1 = decodeURI(ed1);
+			document.write(dd1);
+			document.write("<hr/>");
+			//isNaN
+			var s2 = 'a1a';
+			var s3 = '123';
+			document.write(s2+": "+isNaN(s2)+"<br/>");
+			document.write(s3+": "+isNaN(s3));
+			document.write("<hr/>");
+			//parseFloat
+			var s4 = '123.233';
+			var s5 = '345';
+			document.write(parseFloat(s4)+"<br/>");
+			document.write(parseInt(s5));
+			document.write("<hr/>");
+		</script>
+	</body>
+</html>
